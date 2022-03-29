@@ -1,0 +1,40 @@
+<!doctype html> 
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <script src="script.js"></script>
+    <section>
+      <form name="form" action="https://case.nettbureau.no/submit/" onsubmit="return validate()" method="post">
+        <fieldset>
+            <legend>Informasjon</legend>
+            <label>Navn:</label>
+            <input type="text" name="name" value="" placeholder="Ola Nordmann" required><br>
+            <label>E-post:</label>
+            <input type="email" name="email" value="" placeholder="navn@domene.no" required><br>
+            <label>Telefon:</label>
+            <input type="tel" name="phone" value="" placeholder="XXX XX XXX" required><br>
+            <label>Postnummer:</label>
+            <input type="number" name="areacode" value="" max="9999" placeholder="1234" required><br>
+            <label>Kommentar:</label>
+            <textarea name="comment"></textarea>
+            <br />
+            <button type="submit">Send inn!</button>
+          </fieldset>
+      </form>
+      
+    </section>
+    <p id="errorMessage">  
+      
+    </p>
+
+  </body>
+
+</html>
